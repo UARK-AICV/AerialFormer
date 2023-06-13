@@ -1,6 +1,10 @@
 AerialFormer: Multi-resolution Transformer for Aerial Image Segmentation
 =====
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/aerialformer-multi-resolution-transformer-for/semantic-segmentation-on-isaid)](https://paperswithcode.com/sota/semantic-segmentation-on-isaid?p=aerialformer-multi-resolution-transformer-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/aerialformer-multi-resolution-transformer-for/semantic-segmentation-on-isprs-potsdam)](https://paperswithcode.com/sota/semantic-segmentation-on-isprs-potsdam?p=aerialformer-multi-resolution-transformer-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/aerialformer-multi-resolution-transformer-for/semantic-segmentation-on-loveda)](https://paperswithcode.com/sota/semantic-segmentation-on-loveda?p=aerialformer-multi-resolution-transformer-for)
+
 [[`arXiv`](https://arxiv.org/abs/2306.06842)]
 [[`pdf`](https://arxiv.org/pdf/2306.06842.pdf)]
 
