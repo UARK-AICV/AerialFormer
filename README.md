@@ -74,7 +74,7 @@ If you've not installed it, please refer to [AICV](https://github.com/UARK-AICV/
 <details open>
 <summary><span style="font-size: 1.5em;">Environment Setup</span></summary>
 
-Build Image form `docker/Dockerfile`
+Build Image from `docker/Dockerfile`
 ```bash
 export REGISTRY_NAME="user"
 export IMAGE_NAME="aerialformer"
