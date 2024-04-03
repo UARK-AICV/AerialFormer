@@ -224,6 +224,17 @@ bash tools/dist_test.py work_dirs/aerialformer_tiny_512x512_loveda/2023_0101_000
 <br>
 
 # Acknowledgement
+We thank the following open sourced project(s).
 - [mmsegmentation](https://github.com/open-mmlab/mmsegmentation)
 
 # Citation
+If you find this work helpful, please consider citing the following paper:
+```bibtex
+@article{yamazaki2023aerialformer,
+  title={AerialFormer: Multi-resolution Transformer for Aerial Image Segmentation},
+  author={Yamazaki, Kashu and Hanyu, Taisei and Tran, Minh and Garcia, Adrian and Tran, Anh and McCann, Roy and Liao, Haitao and Rainwater, Chase and Adkins, Meredith and Molthan, Andrew and others},
+  journal={arXiv preprint arXiv:2306.06842},
+  year={2023}
+}
+```
+
