@@ -36,7 +36,7 @@ python tools/convert_datasets/isaid.py /path/to/potsdam
 <details open>
 <summary><span style="font-size: 1.5em;">Potsdam</span></summary>
 
-For [Potsdam](https://www.isprs.org/education/benchmarks/UrbanSemLab/2d-sem-label-potsdam.aspx) dataset, please run the following command to re-organize the dataset. Put your dataset source file in one directory. We used '2_Ortho_RGB.zip' and '5_Labels_all_noBoundary.zip'.
+For [Potsdam](https://www.isprs.org/education/benchmarks/UrbanSemLab/default.aspx) dataset, please run the following command to re-organize the dataset. Put your dataset source file in one directory. We used '2_Ortho_RGB.zip' and '5_Labels_all_noBoundary.zip'.
 
 - With Clutter. Number of class is __6__ classes.
 ```bash
