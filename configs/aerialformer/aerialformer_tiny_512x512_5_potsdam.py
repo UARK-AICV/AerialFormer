@@ -8,6 +8,7 @@ checkpoint_file = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/s
 model = dict(
     backbone=dict(
         init_cfg=dict(type='Pretrained', checkpoint=checkpoint_file)),
+    decode_head=dict(num_classes=5),
     test_cfg=dict(mode='whole'))
 
 # optimizer
