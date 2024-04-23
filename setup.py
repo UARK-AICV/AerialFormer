@@ -27,6 +27,9 @@ if __name__ == '__main__':
         packages=find_packages(exclude=('configs', 'tools', 'demo')),
         include_package_data=True,
         license='Apache License 2.0',
+        install_requires=[
+        'yapf==0.40.1'
+        ],
         # install_requires=parse_requirements('requirements/runtime.txt'),
         # extras_require={
         #     'all': parse_requirements('requirements.txt'),

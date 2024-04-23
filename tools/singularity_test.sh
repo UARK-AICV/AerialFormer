@@ -17,6 +17,16 @@ if [ ! -f "$CHECKPOINT" ]; then
   exit -1
 fi
 
+if [ -z "$REGISTRY_NAME" ]; then
+  echo "[*] Error: REGISTRY_NAME is not set"
+  exit -1
+fi
+
+if [ -z "$IMAGE_NAME" ]; then
+  echo "[*] Error: IMAGE_NAME is not set"
+  exit -1
+fi
+
 singularity run -e --bind $PWD:$PWD \
  --bind $DATAPATH:$PWD/data \
  --nv docker://$REGISTRY_NAME/$IMAGE_NAME \

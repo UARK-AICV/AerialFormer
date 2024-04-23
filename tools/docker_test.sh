@@ -3,7 +3,6 @@ set -e
 
 CONFIG=$1
 CHECKPOINT=$2
-GPUS=$3
 DATAPATH="${DATAPATH:-$PWD/data}"
 
 # Check if the config file exists
@@ -28,7 +27,9 @@ if [ -z "$IMAGE_NAME" ]; then
   exit -1
 fi
 
-singularity run -e --bind $PWD:$PWD \
- --bind $DATAPATH:$PWD/data \
- --nv docker://$REGISTRY_NAME/$IMAGE_NAME \
- bash tools/dist_test.sh $CONFIG $CHECKPOINT $GPUS "${@:4}"
+docker run --gpus all --rm -it \
+ -v $PWD:/workspace \
+ -v $DATAPATH:/workspace/data \
+ --shm-size=8G \
+ $REGISTRY_NAME/$IMAGE_NAME \
+ python tools/test.py $CONFIG "${@:2}"
